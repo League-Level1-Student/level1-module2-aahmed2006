@@ -4,10 +4,25 @@ package _04_tea_maker;
  *    Level 1
  */
 
+import javax.swing.JOptionPane;
+
+import _04_tea_maker.Kettle.Water;
+
 public class TeaMaker {
 
 	/* Figure out how to make a cup of tea in this runner class, using the other classes below */
+public static void main(String[] args) {
+	Kettle kettle = new Kettle();
+	Water water = kettle.getWater();
+	kettle.boil();
+	String flavor = JOptionPane.showInputDialog("what flavor of tea would you like? (green, mint, chamomile, passion fruit");
+	if(flavor=="green"){
+		TeaBag green = new TeaBag("GREEN");
+		Cup cup = new Cup();
+		cup.makeTea(green, water);
+	} 
 
+}
 }
 
 class TeaBag {

@@ -32,7 +32,12 @@ This is because there is no Minion class in the package.
   To check, run this MinionTest class and the JUnit tab should show a GREEN bar.
     
  */
-
+private class Minion{
+	Minion(String name, int eyes, String color, String master) {
+		
+		
+	}
+}
 public class MinionTest {
 
 	@Test
